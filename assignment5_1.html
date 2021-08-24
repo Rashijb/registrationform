@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-color:aliceblue}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  color: dimgray;
+  width: 70%;
+  padding: 12px;
+  border: 1px solid indianred;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:Indianred;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: beige;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3><center>Emplyoee Info</center></h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <br><label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   <br><label>Gender</label><br>
+  <br><input type="radio" id="Male" name="gender" value="Male">
+  <label for="Male">Male</label>
+  <input type="radio" id="Female" name="gender" value="Female">
+  <label for="Female">Female</label>
+  <input type="radio" id="Others" name="gender" value="Others">
+  <label for="Others">Others</label><br>
+<div class="row">
+      <div>
+        <br><label for="Country">Nationality</label>
+      </div>
+      <div>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">India</option>
+          <option value="usa">UK</option>
+        </select>
+      </div>
+    </div>
+ <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email"><br>
+<br><label for="contact">Phone no:</label>
+  <input type="text" id="contact" placeholder="Enter contact number" name="contact"><br>
+
+    <br><input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
